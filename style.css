@@ -40,6 +40,20 @@ body {
   cursor: pointer;
 }
 
+section {
+  height: 100vh; 
+  background-size: cover;      
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+section img {
+  width: 100%;
+  height: 100vh; 
+  
+}
+
+
 /* media query screen 550 */
 @media only screen and (max-width: 550px){
 .navbar .nav-links{
@@ -58,7 +72,5 @@ body {
 .navbar .search i{
     margin-bottom: 10rem;
 }
-
-
 }
 
