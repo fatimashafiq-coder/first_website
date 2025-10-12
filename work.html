@@ -4,39 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randon Sommars</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="work.css">
+    <title>Randon Sommars</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Logo">
+    <section>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <!-- 3 lines icon -->
+                <div class="lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <script>
+            const lines = document.querySelector(".lines");
+            const navLinks = document.querySelector(".nav-links");
+
+            lines.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                lines.classList.toggle("open");
+            });
+        </script>
+        <!-- header section of work page -->
+
+        <div class="hero-img">
+            <img src="assets/work.png" alt="">
+        </div>
+
+        <!-- image section of work page -->
+
+        <div class="image-section work-section-image">
+            <div class="image-box left">
+                <img src="assets/image1.jpg" alt="Left Image">
             </div>
 
+            <div class="image-box right">
+                <img src="assets/image2.png" alt="Right Image">
+            </div>
+        </div>
 
-            <ul class="nav-links">
+        <div class="image-section work-section-image bottom-section">
+            <div class="image-box left">
+                <img src="assets/image3.jpg" alt="Bottom Left Image">
+            </div>
+
+            <!-- empty right box -->
+            <div class="image-box right"></div>
+        </div>
+
+
+
+        <div class="footer-container footer-upper">
+
+            <!-- Left Links -->
+            <ul class="footer-links left-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- Center Logo & Icons -->
+            <div class="footer-center">
+                  <a href="index.html">
+          <img src="assets/logo.png" alt="logo" class="footer-logo">
+        </a>
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com" target="_blank" class="icon"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="icon"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
-        </nav>
-    </header>
 
-    <section class="work-header">
-        <img src="assets/work.png" alt="">
+            <!-- Right Links -->
+            <ul class="footer-links right-links">
+                <li><a href="work.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <p>Copyright © 2024 All Rights Reserved . Powered By Nerdzilla Tech</p>
+        </footer>
     </section>
 
-    </body>
+</body>
 
 </html>
